@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IP report | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="admin">
+<header id="nav"></header>
+<main class="container">
+<h1>IP report</h1><div id="msg" class="alert"></div>
+<form id="blockForm" class="filters"><input id="ip" placeholder="IP address" required><input id="reason" placeholder="Reason"><button class="btn danger" type="submit">Block IP</button></form>
+<h2>Blocked IPs</h2><div class="table-wrap"><table><thead><tr><th>IP address</th><th>Reason</th><th>Blocked by</th><th>Time</th><th>Action</th></tr></thead><tbody id="blocked"></tbody></table></div><h2>Activity by IP</h2><div class="table-wrap"><table><thead><tr><th>IP address</th><th>Attempts</th><th>Failed</th><th>Success</th><th>Last seen</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/admin-ips.js"></script>
+</body></html>

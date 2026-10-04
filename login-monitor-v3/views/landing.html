@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login Activity Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="landing">
+<header id="nav"></header>
+<section class="hero">
+  <h1>Know who is signing in to your system.</h1>
+  <p>Login Activity Monitor records every sign-in attempt, locks accounts under brute-force attack and gives administrators a clear view of suspicious activity.</p>
+  <div class="hero-actions"><a class="btn primary" href="/register">Create account</a><a class="btn" href="/login">Log in</a></div>
+</section>
+<main class="container">
+  <h2>What it does</h2>
+  <div class="cards feature-grid">
+    <div class="card"><strong>Account lockout</strong><p class="muted">Five wrong passwords lock the account for 15 minutes, stopping brute-force guessing.</p></div>
+    <div class="card"><strong>Full login history</strong><p class="muted">Every attempt is logged with time, IP address, device and result.</p></div>
+    <div class="card"><strong>IP blocking</strong><p class="muted">Admins can block an IP, and an IP with 20 failures in 10 minutes is blocked automatically.</p></div>
+    <div class="card"><strong>New-IP alerts</strong><p class="muted">Users are warned when their account is used from an IP address they have not used before.</p></div>
+    <div class="card"><strong>Risk score</strong><p class="muted">Each user gets a 0-100 score from recent failures and unusual sign-ins.</p></div>
+    <div class="card"><strong>Reports</strong><p class="muted">Charts, filters and CSV export for the security administrator.</p></div>
+  </div>
+  <h2>How a sign-in is checked</h2>
+  <ol class="steps">
+    <li>Is the IP address blocked? If yes, reject.</li>
+    <li>Is the account locked? If yes, reject and log it.</li>
+    <li>Is the password correct (bcrypt)? If not, count the failure and lock after 5.</li>
+    <li>If correct, reset the counter, log success and start a secure session.</li>
+  </ol>
+  <h2>Two roles</h2>
+  <div class="cards">
+    <div class="card"><strong>User</strong><p class="muted">Dashboard, own login history, profile and password change.</p></div>
+    <div class="card"><strong>Security admin</strong><p class="muted">Logs, locked accounts, IP report, user management and statistics.</p></div>
+  </div>
+</main>
+<footer class="foot">Login Activity Monitor &middot; Web Application Project</footer>
+<script src="/js/common.js"></script>
+</body></html>

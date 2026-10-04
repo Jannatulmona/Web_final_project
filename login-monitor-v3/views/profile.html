@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My profile | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="user">
+<header id="nav"></header>
+<main class="container">
+<h1>My profile</h1>
+<div id="cards" class="cards"></div>
+<h2>Account details</h2>
+<section class="narrow">
+  <div id="msg" class="alert"></div>
+  <form id="form">
+    <label>Full name<input id="name" required maxlength="60"></label>
+    <label>Email<input type="email" id="email" required></label>
+    <label id="pwRow" class="hidden">Current password (needed to change email)<input type="password" id="password" autocomplete="current-password"></label>
+    <button class="btn primary" type="submit">Save changes</button>
+  </form>
+</section>
+<section id="danger" class="narrow danger-zone hidden">
+  <h2>Delete my account</h2>
+  <p class="muted">This permanently removes your account. Your past login records stay in the security log without your profile.</p>
+  <div id="msg2" class="alert"></div>
+  <label>Enter your password to confirm<input type="password" id="delPassword" autocomplete="current-password"></label>
+  <button id="delBtn" class="btn danger" type="button">Delete account</button>
+</section>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/profile.js"></script>
+</body></html>

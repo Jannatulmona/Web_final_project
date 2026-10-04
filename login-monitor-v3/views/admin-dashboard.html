@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin dashboard | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="admin">
+<header id="nav"></header>
+<main class="container">
+<h1>Security overview</h1><div id="cards" class="cards"></div><h2>Last 7 days</h2><div class="chart-box"><canvas id="chart"></canvas></div><h2>Latest activity</h2><div class="table-wrap"><table><thead><tr><th>Time</th><th>Email tried</th><th>IP address</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/admin-dashboard.js"></script>
+</body></html>

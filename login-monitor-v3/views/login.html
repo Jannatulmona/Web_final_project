@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log in | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="public" class="auth">
+<header id="nav"></header>
+<main class="container">
+<section class="auth-card"><h1>Log in</h1><p class="muted">Every sign-in attempt is recorded.</p>
+<div id="msg" class="alert"></div>
+<form id="form"><label>Email<input type="email" id="email" required autocomplete="username"></label>
+<label>Password<input type="password" id="password" required autocomplete="current-password"></label>
+<button class="btn primary" type="submit">Log in</button></form>
+<p class="muted">No account? <a href="/register">Register</a></p><p class="muted"><a href="/">&larr; Back to home</a></p></section>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body></html>

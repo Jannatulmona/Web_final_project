@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manage users | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="admin">
+<header id="nav"></header>
+<main class="container">
+<h1>Manage users</h1>
+<p class="muted">Risk score (0-100) uses failed logins, attempts on a locked account and new-IP logins from the last 7 days.</p>
+<div id="msg" class="alert"></div>
+<form id="filters" class="filters">
+  <input id="q" placeholder="Search name or email">
+  <select id="role"><option value="">Any role</option><option value="user">User</option><option value="admin">Admin</option></select>
+  <select id="status"><option value="">Any status</option><option value="active">Active</option><option value="inactive">Deactivated</option><option value="locked">Locked</option></select>
+  <button class="btn primary" type="submit">Search</button><button class="btn" type="reset" id="reset">Clear</button>
+</form>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Risk</th><th>Actions</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/admin-users.js"></script>
+</body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All logs | Login Monitor</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-access="admin">
+<header id="nav"></header>
+<main class="container">
+<h1>All login logs</h1>
+<form id="filters" class="filters"><select id="status"><option value="">Any status</option><option>success</option><option>failed</option><option>locked</option><option>blocked</option></select>
+<input id="email" placeholder="Email"><input id="ip" placeholder="IP address"><input type="date" id="from"><input type="date" id="to">
+<button class="btn primary" type="submit">Filter</button><a id="csv" class="btn" href="/api/admin/logs.csv">Download CSV</a></form><div class="table-wrap"><table><thead><tr><th>Time</th><th>Email tried</th><th>User</th><th>IP address</th><th>Status</th><th>Note</th><th>Device</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/admin-logs.js"></script>
+</body></html>
