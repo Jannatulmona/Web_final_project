@@ -1,15 +1,15 @@
 # Login Activity Monitor
 A multi-page, multi-role web application that records every sign-in attempt, locks accounts under brute-force attack, and gives a security administrator a dashboard to spot suspicious activity. Built for a web development course with a focus on **defensive web security**.
 
-<!--
-SCREENSHOTS: create a folder named "screenshots", add images, then uncomment the lines below.
+
+
 
 ## Screenshots
 
 | Landing page | Admin dashboard |
 |---|---|
 | ![Landing](screenshots/landing.png) | ![Admin](screenshots/admin-dashboard.png) |
--->
+
 
 ## Features
 
